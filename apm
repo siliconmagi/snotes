@@ -1,0 +1,52 @@
+## commands
+
+// Multiple cursors
+
+hold ctrl
+
+// Comments
+
+ctrl + /
+
+// Select next match, unselect next match
+
+Ctrl + D
+Ctrl + U
+
+// Duplicate
+Shift + Ctrl + D
+
+// indent
+
+ctrl + ]
+ctrl + [
+
+// move line up or down
+
+ctrl + (up arrow)
+ctrl + (down arrow)
+
+## setup auto-indent keybind
+// require atom restart
+
+Edit > Keymap
+
+'atom-text-editor':
+    'ctrl-}': 'editor:auto-indent'
+
+## auto-enable softwrap and Indent Guide
+
+Edit > Config >
+
+editor:
+  showIndentGuide: true
+  showInvisibles: true
+  softWrap: true
+
+## tools
+
+apm install react
+
+## themes
+
+apm install genesis-ui native-ui vin-dark-syntax vin-syntax nova-atom-ui nova-atom-syntax dark-candy deep-space-syntax predawn-syntax new-moon-atom-syntax darkula-ui darkula-syntax jsfiddle-like-syntax an-old-hope-syntax spacegray-black-syntax spacegray-dark-neue-ui awesome-material-syntax visual-studio-dark-syntax unity-ui slack-ui tomorrow-night-eighties-syntax no-caffeine-syntax slime prism-syntax railscast-theme atom-dark-ui-slim sepia-syntax github-atom-light-syntax oceanic-next electron-highlighter-syntax one-dark-vivid-syntax washout-ui bensk-syntax github-atom-dark-syntax ambiance polaris-syntax flatland-dark chester-atom-syntax kary-foundation-light kary-foundation-dark northpole-syntax iceberg-syntax gruvbox-syntax atom-chrome-syntax atom-firecode-syntax winterdawn-syntax robin-hood-syntax php-light-syntax winter-syntax all-green-ui fizzy blessed-light-syntax adventurous-syntax dark-monokai-batch ramda-syntax resonance-ui skriptdark-neon-syntax skriptdark-syntax skriptlight-neon-syntax skriptlight-syntax tron-legacy-syntax tron-legacy-ui improved-chester-atom-syntax duotone-light-syntax duotone-dark-space-syntax duotone-dark-sea-syntax cobalt2-syntax cake-syntax base16-ocean-dark-syntax-theme atom-panda-syntax duotone-dark-earth-syntax duotone-dark-syntax duotone-dark-forest-syntax min-ui-colorful lc-atom-ui gloom idiomatic-dark-syntax min-ui-colorful idiomatic-dark-syntax lucid-syntax myke-theme-syntax mr-monokai retro-gruvbox polymorph-ui tron-green-ui firewatch-green-syntax black-ui quantum-syntax quantum-ui piatto-light monokai-shade gruvbox-plus-syntax rain-ui hacking-the-kernel-ui atom-dark-fusion-syntax accents-ui hacking-the-kernel twilight-syntax chester-atom-2-syntax tinacious-design-syntax one-o-eight-syntax lc-syntax lunar-particle-ui chromodynamics flat-light-syntax itg-flat-flatland-monokai spacegray-eighties-ui code-school dark-code-syntax spacemacs-dark-syntax earthsung-by-jackson-syntax overgrowth-dark-syntax overgrowth-syntax gaia-syntax chocolate-syntax ficus-syntax tia-ui green-re-syntax vanian-syntax vanian-ui flexible-ui ubik-syntax newfirewatch-syntax grayula-theme firefox-syntax

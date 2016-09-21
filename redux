@@ -1,0 +1,56 @@
+/* Basic Component */
+import React from 'react';
+
+const PhotoGrid = React.createClass({
+    render() {
+        return (
+          <div className = "photo-grid">
+          I am the photo-grid
+          </div>
+        )
+    }
+});
+
+export default PhotoGrid;
+
+/* Basic routing via Main.js
+Any prop coming from parent component will be passed to photo or single grid children.
+
+For rbrain.js to render it will need to include a child component in the render function.
+
+e.g.
+render(<Main><p>hello</p></Main>, document.getElementById('root'));
+
+*/
+
+    /* Main.js component */
+    import React from 'react';
+    import {Link} from 'react-router';
+
+    const Main = React.createClass({
+      render() {
+        return (
+          <div>
+            <h1>
+              <Link to="/">rbrain</Link>
+            </h1>
+            {React.cloneElement(this.props.children, this.props)}
+          </div>
+        )
+      }
+    });
+
+    export default Main;
+
+    /* rbrain.js app */
+    import React from 'react';
+
+    import {render} from 'react-dom';
+
+    // Import css
+    import css from './styles/style.styl';
+
+    // Import Components
+    import Main from './components/Main';
+
+    render(<Main><p>hello</p></Main>, document.getElementById('root'));

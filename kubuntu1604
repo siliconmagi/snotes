@@ -1,0 +1,35 @@
+#install treeview
+ sudo apt-get install tree
+
+## INSTALL SILVER SURFER
+
+sudo apt-get install silversearcher-ag
+
+#install command-line fuzzy search
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+## restart kwin
+
+kwin --replace
+killall plasmashell
+kstart plasmashell
+
+
+Press Ctrl+Alt+F1 to access a terminal. Log in.
+
+Type killall kwin. Then, type in DISPLAY=:0 kwin.
+
+Press Ctrl+Alt+F7 to change back to your primary display.
+
+DISPLAY=:0 kwin --replace
+
+## install 7zip
+
+sudo apt-get install p7zip-full
+
+## compress via 7zip with password SECRET
+7z a ~/git/notes.7z ~/git/notes/* -pSECRET
+
+## extract via 7zip with password
+7z -y x ~/git/notes.7z -o/home/oak/git/extracted

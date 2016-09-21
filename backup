@@ -1,0 +1,8 @@
+
+## BACKUP NOTES
+
+## compress via 7zip with password SECRET
+7z a ~/git/notes.7z ~/git/notes/* -pSECRET
+
+## extract via 7zip with password
+7z -y x ~/git/notes.7z -o/home/oak/git/extracted

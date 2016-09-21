@@ -1,0 +1,14 @@
+## INSTALL
+
+https://github.com/junegunn/fzf
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+## KEYBINDINGS
+
+ALT-C - cd into the selected directory
+
+CTRL-R - Paste the selected command from history onto the command line
+
+CTRL-T - Paste the selected files and directories onto the command line

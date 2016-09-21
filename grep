@@ -1,0 +1,15 @@
+grep -ril "postID" .
+
+r - recursive
+i - ignore case
+l - show file name not result
+n - line number
+. - location current directory
+
+## INSTALL SILVER SURFER
+
+sudo apt-get install silversearcher-ag
+
+ag postId -l
+
+-print line only
