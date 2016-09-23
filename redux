@@ -1,3 +1,28 @@
+/* Basic Structure */
+client
+  > components
+    > Main.js
+    > PhotoGrid.js
+    > Single.js
+  > styles
+    > _animations.styl
+    > _normalize.styl
+    > _typography.styl
+    > style.styl
+  > rbrain.js
+tests
+.babelrc
+.eslintrc
+.gitignore
+devServer.js
+index.html
+jsconfig.json
+package.json
+README.md
+webpack.config.dev.js
+webpack.config.js
+webpack.config.prod.js
+
 /* Basic Component */
 import React from 'react';
 
@@ -54,3 +79,42 @@ render(<Main><p>hello</p></Main>, document.getElementById('root'));
     import Main from './components/Main';
 
     render(<Main><p>hello</p></Main>, document.getElementById('root'));
+
+/* Router Component */
+/*
+browserHistory allow push state without having to change urls and reload page
+
+Parent Route:  At top level "/" use the Main component
+
+Children Nested Routes:
+
+IndexRoute will route to photo-grid if path is just "/"
+
+Otherwise use nested route "/view/:postId"
+*/
+  //rbrain.js
+  import React from 'react';
+  import {render} from 'react-dom';
+
+  // Import css
+  import css from './styles/style.styl';
+
+  // Import Components
+  import Main from './components/Main';
+  import Single from './components/Single';
+  import PhotoGrid from './components/PhotoGrid';
+
+  // Import React Router deps
+  import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+  // Route component
+  const router = {
+    <Router history={browserHistory}>
+      <Route path="/" component={Main}>
+        <IndexRoute component={PhotoGrid}></IndexRoute>
+        <Route path="/view/:postId" component={Single}></Route>
+      </Route>
+    </Router>
+  }
+
+  render(<Main />, document.getElementById('root'));
