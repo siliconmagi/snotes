@@ -6,6 +6,9 @@ tmux
 // issue tmux command
 ctrl-b
 
+// scroll mode
+[
+
 // create new window
 c
 

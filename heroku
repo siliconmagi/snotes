@@ -1,0 +1,28 @@
+
+// verify ruby is installed
+ruby -v
+
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+// verify heroku install
+heroku --version
+
+// login
+heroku login
+
+// create heroku app
+heroku create <name>
+
+// destroy heroku app
+heroku destroy <name>
+
+## DEPLOY
+
+cd build
+git init
+git add .
+git commit -m "my first commit"
+heroku create
+git remote -v
+heroku git:remote -a rbrain
+git push heroku master
