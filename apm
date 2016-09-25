@@ -1,5 +1,13 @@
 ## commands
 
+// delete line
+
+ctrl + shift + k
+
+// delete all empty lines
+
+ctrl + f, turn on regex, enter find:  "^(?:[\t ]*(?:\r?\n|\r))+", Replace All
+
 // Multiple cursors
 
 hold ctrl

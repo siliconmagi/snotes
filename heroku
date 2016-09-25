@@ -17,6 +17,7 @@ heroku create <name>
 heroku destroy <name>
 
 ## DEPLOY
+// https://rbrain.herokuapp.com/
 
 cd build
 git init
